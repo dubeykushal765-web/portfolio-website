@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(17, 17, 17);
+  padding-bottom: 300px;
+}
+
+
+  .header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo - nav - hire button */
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+     z-index: 1200; 
+  }
+
+  .logo {
+    color: rgb(255, 51, 0);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    justify-self: start;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden; /* hides overflow when space gets tight */
+    transition: all 0.3s ease;
+  }
+
+  .nav div {
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+  .nav a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.nav a:hover {
+  color: rgb(255, 89, 0); /* matches your button color */
+}
+
+
+  .hire-btn {
+    background-color: rgb(255, 89, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s;
+    white-space: nowrap;
+    justify-self: end;
+  }
+
+  .hire-btn:hover {
+    background-color: rgb(0, 139, 163);
+  }
+
+  /* Optional: make spacing compress more gracefully */
+  @media (max-width: 900px) {
+    .nav {
+      gap: 25px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .nav {
+      gap: 15px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .nav {
+      gap: 8px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .nav {
+      gap: 5px;
+    }
+  }
+.lower {
+  margin-left: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgb(60, 54, 54);
+}
+
+  
+  .hireme2,
+.cv,
+.hire-btn {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 12px 28px;
+  letter-spacing: 0.5px;
+}
+
+.hireme2:hover,
+.hire-btn:hover {
+  background-color: rgb(0, 139, 163);}
+
+/*chatgpt*/
+.hire-btn {
+  background: rgb(20, 100, 200);
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  background: rgb(10, 80, 180);
+  transform: scale(1.05);
+}
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.socialmedia img {
+  width: 40px;
+  transition: 0.3s;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(0,0,0,0.4));
+}
+.hero {
+  width: 100%;
+  height: 450px;
+  background: rgb(8, 40, 58);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  color: white;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+
+
+
+/*chatgpt ends*/
+
+
+.cv {
+  background-color: rgb(100, 100, 100);
+  border: none;
+}
+
+.cv:hover {
+  background-color: rgb(130, 130, 130);
+}
+
+.about-me {
+  color: rgb(200, 200, 200);
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.name {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  margin: 5px 0;
+  letter-spacing: 1px;
+}
+.developer {
+  font-size: 55px;
+  font-weight: 700;
+  color: rgb(255, 89, 0);
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.socialmedia {
+  display: flex;
+     /* center horizontally */
+  align-items: center;       /* center vertically */
+  gap: 20px;                 /* spacing between icons */
+  margin-top: 20px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+
+
+
+
+  a{
+    text-decoration: none;
+  }
+  .nav ul {
+  list-style: none;   /* removes dots */
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  list-style: none;
+}
+.nav li {
+  white-space: nowrap;
+}
+
+/* Parent containing hero + image side-by-side */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 600px;
+  padding: 0 40px;
+  position: relative;   /* IMPORTANT */
+}
+
+
+/* HERO TRAPEZIUM (MATCHED HEIGHT) */
+.hero {
+  background: rgba(8, 40, 58, 0.804);
+  padding: 40px;
+
+  width: 1500px;          /* you can change this if needed */
+  height: 600px;         /* EXACT same height as image-wrapper */
+   position: relative;
+  z-index: 1; 
+
+  /* Trapezium shape (scaled to tall height) */
+  clip-path: polygon(
+      0% 0%,       /* top-left */
+      60% 0%,     /* top-right */
+      100% 100%,   /* bottom-right (outward slant) */
+      0% 100%     /* bottom-left (short bottom) */
+  );
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+/* SOCIAL MEDIA ICONS */
+.profile-picture {
+  width: 40px;
+  height: 40px;
+}
+
+
+.stats-box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  background: rgba(20, 20, 20, 0.9);
+  padding: 30px 50px;
+  border-radius: 20px;
+  width: fit-content;
+  margin-top: 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat {
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Divider bar */
+.stat:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 50%;                /* move to center */
+  transform: translateY(-50%); /* shift up by half height */
+
+  height: 70px;            /* adjust as you like */
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.stat h2 {
+  color: rgb(255, 89, 0);
+  font-size: 32px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.stat p {
+  margin: 5px 0 0;
+  color: rgb(200, 200, 200);
+  font-size: 16px;
+}
+
+
+
+/* IMAGE IN TRAPEZIUM */
+
+
+.image-wrapper {
+  width: 550px;            /* Image width */
+  height: 680px;           /* SAME height as hero */
+  margin-left: -250px;     /* This makes the image overlap the hero */
+  position: relative;
+  z-index: 2;              /* Push above hero */
+  overflow: hidden;
+
+  /* STRONG SLANT (more diagonal) */
+  clip-path: polygon(
+      30% 0%,      /* top-left slant inward */
+      100% 0%,     /* top-right */
+      100% 100%,   /* bottom-right */
+      0% 100%      /* bottom-left */
+  );
+}
+
+
+/* image styling inside wrapper */
+.image-wrapper .my-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 50%;
+}
+
+
+/* Make overlap smaller on medium screens */
+@media (max-width: 1200px) {
+  .image-wrapper {
+    width: 650px; /* reduce width so it doesn't dominate */
+  }
+}
+
+/* On small screens hide the fixed image (or move below header) */
+@media (max-width: 900px) {
+  .image-wrapper {
+    display: none; /* or: width: 400px; right: 10px; height: 60vh; */
+  }
+}
+.description{
+  background-color:  rgba(8, 40, 58, 0.804);
+  margin-top: 39.99px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.aboutme{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(255, 89, 0);
+}
+.p1{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:rgba(255, 255, 255, 0.403);
+
+}
+.aryan{
+  display:flex;
+  align-items: center;
+}
+.personal{ 
+   gap: 20px;
+}
+.p2{
+    font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color:rgb(241, 233, 233);
+ 
+
+}
+.p3{
+      color:rgba(255, 255, 255, 0.403);
+      font-size: 20px;
+
+}

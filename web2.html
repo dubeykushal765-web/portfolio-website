@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Step 1: Add Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+  <!-- Your CSS File -->
+  <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+<!-- chatgpt  -->
+
+<script>
+const faders = document.querySelectorAll(".fade-in");
+
+const appear = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+faders.forEach(fade => appear.observe(fade));
+
+const text = "Hi, I'm Kushal Dubey — a CSDS Student & Web Developer";
+let index = 0;
+
+function type() {
+  document.getElementById("typewriter").innerText = text.slice(0, index);
+  index++;
+  if (index <= text.length) setTimeout(type, 60);
+}
+
+type();
+</script>
+
+
+
+
+
+<!-- chatgpt ends -->
+
+  <div class="header">
+    <div class="logo"><a href="#" class="logo">Portfolio</a></div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <button class="hire-btn">Hire Me</button>
+  </div>
+<div class="container">
+
+  <div class="hero"> 
+<!-- chatgpt-->
+
+<h1 id="typewriter"></h1>
+
+
+    <!-- chatgpt-->
+
+    <h1 class="about-me">Hi I am</h1>
+    <h1 class="name">Kushal Dubey</h1>
+    <p class="developer">Front-End Developer</p>
+
+    <div class="socialmedia">
+      <div><img class="profile-picture" src="portfolio-logo/instagram-logo.png"></div>
+      <div><img class="profile-picture" src="portfolio-logo/linkedin-logo.png"></div>
+      <div><img class="profile-picture" src="portfolio-logo/youtube-logo.png"></div>
+    </div>
+
+    <div>
+      <button class="hireme2">Hire me</button>
+      <button class="cv">Download CV</button>
+    </div>
+
+    <div class="stats-box">
+  <div class="stat">
+    <h2>5+</h2>
+    <p>Experiences</p>
+  </div>
+
+  <div class="stat">
+    <h2>20+</h2>
+    <p>Project done</p>
+  </div>
+
+  <div class="stat">
+    <h2>80+</h2>
+    <p>Happy Clients</p>
+  </div>
+</div>
+
+  </div>
+
+  <div class="image-wrapper">
+    <img class="my-image" src="my-image/my-image.jpg">
+  </div>
+
+</div>
+
+<div class="description"> 
+  <div class="aboutme">About me</div>
+  <div><p class="p1">Hi, I'm Kushal Dubey, a 3rd-year B.Tech CSDS student with a growing interest in development. I have beginner-level skills in</p>
+  <p class="p1">HTML, CSS, JavaScript, and C++, and I’m actively building projects to improve my knowledge. I’m focused on learning,</p>
+<p class="p1">creating, and growing as a developer.</p></div>
+  <div class="personal">
+    
+      <div class="aryan"><p class="p2">Name:</p><p class="p3">Kushal Dubey</p></div>
+      <div class="aryan"><p class="p2">Date of birth:</p><p class="p3">June 18,2006</p></div>
+      <div class="aryan"><p class="p2">Address:</p><p class="p3">PSIT, Kanpur</p></div>
+      <div class="aryan"><p class="p2">Email:</p><p class="p3">dubeykushal765@gmail.com</p></div>
+      <div class="aryan"><p class="p2">Phone:</p><p class="p3">8090670402</p></div>
+    
+  </div>
+  <div>
+        <div class="stats-box">
+  <div class="stat">
+    <h2>5+</h2>
+    <p>Music</p>
+  </div>
+
+  <div class="stat">
+    <h2>20+</h2>
+    <p>Travel</p>
+  </div>
+
+  <div class="stat">
+    <h2>80+</h2>
+    <p>Movie</p>
+  </div>
+
+    <div class="stat">
+    <h2>80+</h2>
+    <p>Sports</p>
+  </div>
+</div>
+  </div>
+
+</div>
+
+
+  <!--<div class="lower">
+    <p class="about-me">Hi I am</p>
+    <p class="name">Kushal Dubey</p>
+    <p class="developer">Front-End Developer</p>
+    <div>
+      <button class="hireme2">Hire me</button>
+      <button class="cv">Download CV</button>
+    </div>-->
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+</script>
+
+
+
+
+
+  </div>
+</body>
+</html>
